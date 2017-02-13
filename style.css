@@ -88,6 +88,6 @@ a:hover {
 @font-face {
     font-family: 'Neuton';
     font-style: normal;
-    font-weight: 400;
-    src: local('Neuton Regular'), local('Neuton-Regular'), url(https://fonts.gstatic.com/s/neuton/v9/2yfL00UA7vu40fNHPnbJgw.ttf) format('truetype');
+    font-weight: 700;
+    src: local('Neuton Bold'), local('Neuton-Regular'), url(https://fonts.gstatic.com/s/neuton/v9/2yfL00UA7vu40fNHPnbJgw.ttf) format('truetype');
 }
