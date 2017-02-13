@@ -1,15 +1,54 @@
 body {
-      margin: 40px auto;
-      max-width: 650px;
-      line-height: 1.6;
-      font-size: 18px;
-      color: #444;
-      padding: 0 10px;
+    font-size: 22px;
+    color: #1a1a1a;
+    font-family: 'Muli', sans-serif;;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url('bg.jpg');
+    background-size: cover;
+}
+
+@media (min-width: 650px) {
+
+    body {
+        background-size: 125%;
+        background-position-y: 0;
+    }
+
+    .container {
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 48px;
+    }
+
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    padding: 12px;
+}
+
+.page-section {
+    padding: 12px 0;
 }
 
 .logo {
     display: block;
-    margin: auto;
+    padding: 48px 0;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.site-title {
+    font-size: 4rem;
+    margin: 1rem 0;
 }
 
 .label {
@@ -17,7 +56,38 @@ body {
     padding-right: 1em;
 }
 
-h1, h2, h3, h4 {
-    text-align: center;
+h1, h2 {
     line-height: 1.2;
+    font-family: 'Neuton', serif;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #107d42;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #07391e;
+    text-decoration: underline;
+}
+
+/* google fonts */
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v10/BfQP1MR3mJNaumtWa4Tizg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Neuton';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Neuton Regular'), local('Neuton-Regular'), url(https://fonts.gstatic.com/s/neuton/v9/2yfL00UA7vu40fNHPnbJgw.ttf) format('truetype');
 }
