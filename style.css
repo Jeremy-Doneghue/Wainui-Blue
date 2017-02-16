@@ -10,25 +10,10 @@ body {
     background-size: cover;
 }
 
-@media (min-width: 650px) {
-
-    body {
-        background-size: 125%;
-        background-position-y: 0;
-    }
-
-    .container {
-        max-width: 650px;
-        margin: 0 auto;
-        padding: 48px;
-    }
-
-}
-
 .overlay {
     background: rgba(255, 255, 255, 0.3);
-    height: 100%;
-    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 .container {
@@ -75,6 +60,27 @@ a {
 a:hover {
     color: #07391e;
     text-decoration: underline;
+}
+
+@media (max-width: 1525px) {
+    .overlay {
+        background: rgba(255, 255, 255, 0.6);
+    }
+}
+
+@media (min-width: 650px) {
+
+    body {
+        background-position-x: 30%;
+        font-size: 28px;
+    }
+
+    .container {
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 48px;
+    }
+
 }
 
 /* google fonts */
