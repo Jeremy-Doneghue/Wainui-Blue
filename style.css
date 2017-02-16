@@ -62,13 +62,10 @@ a {
 
 a:hover {
     color: #07391e;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
-@media only screen and (min-width:650pt) {
-    body {
-        background-position-x: 30%;
-    }
+@media only screen and (orientation: landscape) {
     .container {
         max-width: 650px;
         margin: 0 auto;
@@ -76,9 +73,14 @@ a:hover {
     }
 }
 
-@media only screen and (max-width:743pt) {
+@media only screen and (orientation: portrait){
+
     body {
+        background-position-x: 30%;
         font-size: 50px;
+    }
+    .container {
+        padding: 48px;
     }
     .page-section {
       padding-bottom: 200pt;
